@@ -40,6 +40,9 @@ table, div {
 *[class=mobhide] {
 	display: none !important;
 }
+*[class=mob-center] {
+	text-align: center!important;
+}
 *[class=block] {
 	display: block !important;
 	width: 100% !important;
@@ -62,9 +65,6 @@ img {
 img[class=fullwidth] {
 	width: 100% !important;
 	height: auto !important;
-}
-*[class=mob-center] {
-	text-align: center!important;
 }
 *[class=padding] {
 	padding-left: 15px !important;
@@ -100,20 +100,15 @@ img[class=fullwidth] {
               <td>&nbsp;</td>
             </tr>
             <tr>
-              <td class="padding"><table width="210" border="0" align="left" cellpadding="0" cellspacing="0">
-                  <tbody>
-                    <tr>
-                      <td id="johnson" class="mob-center" align="left" style="font-family: Arial, Helvetica, sans-serif; color: #000000; font-size:11px;">Johnson Line color sit amet, consectetur dipiscing elit. <a style="color:blue;" href="#">Call to Action &gt;</a></td>
-                    </tr>
-                  </tbody>
-                </table>
-                <table width="210" border="0" align="right" cellpadding="0" cellspacing="0">
-                  <tbody>
-                    <tr>
-                      <td class="mob-center" align="right" style="font-family: Arial, Helvetica, sans-serif; color: #000000; font-size:11px;">Browser Link dolor sit amet, consectetur dipiscing elit. <a style="color:blue;" href="#">View in browser</a></td>
-                    </tr>
-                  </tbody>
-                </table></td>
+              <td class="padding"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr>
+                    <td width="210" align="left" class="block mob-center" id="johnson" style="font-family: Arial, Helvetica, sans-serif; color: #000000; font-size:11px;">Johnson Line color sit amet, consectetur dipiscing elit. <a style="color:blue;" href="#">Call to Action &gt;</a></td>
+                    <td class="mobhide">&nbsp;</td>
+                    <td width="210" align="right" class="block mob-center" style="font-family: Arial, Helvetica, sans-serif; color: #000000; font-size:11px;">Browser Link dolor sit amet, consectetur dipiscing elit. <a style="color:blue;" href="#">View in browser</a></td>
+                  </tr>
+                </tbody>
+              </table></td>
             </tr>
             <tr>
               <td>&nbsp;</td>
