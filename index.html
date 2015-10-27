@@ -1,116 +1,97 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:v="urn:schemas-microsoft-com:vml">
 <head>
-<meta content="IE=edge" http-equiv="X-UA-Compatible">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Template 1</title>
-<style type="text/css">
-.ExternalClass, .ReadMsgBody {
-	width: 100%;
-} /* Forces Outlook.com to display emails at full width */
-.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
-	line-height: 100%;
-}
-body {
-	-webkit-text-size-adjust: none;
-	-ms-text-size-adjust: none;
-} /* Prevents Webkit and Windows Mobile platforms from changing default font sizes. */
-body {
-	margin: 0;
-	padding: 0;
-} /* Resets all body margins and padding to 0 for good measure */
-table, td {
-	mso-table-lspace: 0pt;
-	mso-table-rspace: 0pt;
-}
-table td {
-	border-collapse: collapse;
-}
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <title>Ember Template</title>
 
-@media only screen and (max-width: 650px) {
-/*CSS styles here will be applied on supporting mobile devices*/
-table, div {
-	width: 100% !important;
-	position: relative !important;
-	height: auto !important;
-	overflow: visible !important;
-	top: 0px !important;
-}
-*[class=mobhide] {
-	display: none !important;
-}
-*[class=mob-center] {
-	text-align: center!important;
-}
-*[class=block] {
-	display: block !important;
-	width: 100% !important;
-}
-*[class="block mob-center"] {
-	display: block !important;
-	width: 100% !important;
-	text-align: center!important;
-}
-td {
-	max-width: 100%;
-	height: auto !important;
-}
-img {
-	max-width: 100%;
-	height: auto !important;
-	border: 0;
-	vertical-align:middle;
-}
-img[class=fullwidth] {
-	width: 100% !important;
-	height: auto !important;
-}
-*[class=padding] {
-	padding-left: 15px !important;
-	padding-right: 15px !important;
-}
-*[id=johnson] {
-	padding-bottom: 10px;
-}
-*[id=logo] {
-	padding-bottom: 10px;
-}
-*[class=mobileonly],
-*[class=mobileonly] * {
-	line-height: 100% !important;
-	max-height: none !important;
-	width: 100% !important;
-	text-indent: 0 !important;
-	display: block !important;
-	overflow: visible !important;
-	height: auto !important;
-}
-}
-</style>
-<!--[if gte mso 9]><xml>
- <o:OfficeDocumentSettings>
-  <o:AllowPNG/>
-  <o:PixelsPerInch>96</o:PixelsPerInch>
- </o:OfficeDocumentSettings>
-</xml><![endif]-->
+   <style type="text/css">
+      div, p, a, li, td {
+         -webkit-text-size-adjust:none;
+      }
+      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+         mso-line-height-rule: exactly;
+         line-height: 100%;
+      }
+      .ReadMsgBody { 
+         width:100%; 
+      } 
+      .ExternalClass { 
+         width:100%;
+      }
+      /* Mobile Styles */
+      @media only screen and (max-width: 650px) {
+         *[class="fullWidth"] {
+            display: block !important;
+            width: 100% !important;
+            height: auto !important;
+         }
+         *[class="mobileHide"] {
+            display: none !important;
+         }
+         *[class="mobileShow"] {
+            display: block !important;
+         }
+         td[id="johnson"] {
+            padding-bottom: 10px !important;
+         }
+         img {
+            width: auto !important;
+            max-width: 100% !important;
+         }
+         table[class="fullWidth"] {
+            display: table !important;
+            min-width: 200px !important;
+         }
+         table[class="mobileContentWidth"] {
+            width: 94% !important;
+            margin: 0 auto !important;
+         }
+         td[class="fullWidth align-left"] {
+            display: block !important;
+            width: 100% !important;
+            height: auto !important;
+            text-align: left !important;
+         }
+         td[class="fullWidth align-center"] {
+            display: block !important;
+            width: 100% !important;
+            height: auto !important;
+            text-align: center !important;
+         }
+         img[class="mobileShow"] {
+            display: block !important;
+            width: 100% !important;
+            height: auto !important;
+         }
+      }
+   </style>
+   <!--[if gte mso 9]>
+   <xml>
+      <o:OfficeDocumentSettings>
+         <o:AllowPNG/>
+         <o:PixelsPerInch>96</o:PixelsPerInch>
+      </o:OfficeDocumentSettings>
+   </xml>
+   <![endif]-->
 </head>
 <body style="margin:0; background:#FFFFFF;">
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
   <tbody>
     <tr>
-      <td align="center" bgcolor="#FFFFFF"><table width="650" border="0" cellspacing="0" cellpadding="0">
+      <td align="center" bgcolor="#FFFFFF"><table class="fullWidth" style="width: 650px;" border="0" cellspacing="0" cellpadding="0">
           <tbody>
             <tr>
               <td>&nbsp;</td>
             </tr>
             <tr>
-              <td class="padding"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <td><table class="mobileContentWidth" style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
                 <tbody>
                   <tr>
-                    <td width="210" align="left" class="block mob-center" id="johnson" style="font-family: Arial, Helvetica, sans-serif; color: #000000; font-size:11px;">Johnson Line color sit amet, consectetur dipiscing elit. <a style="color:blue;" href="#">Call to Action &gt;</a></td>
-                    <td class="mobhide">&nbsp;</td>
-                    <td width="210" align="right" class="block mob-center" style="font-family: Arial, Helvetica, sans-serif; color: #000000; font-size:11px;">Browser Link dolor sit amet, consectetur dipiscing elit. <a style="color:blue;" href="#">View in browser</a></td>
+                    <td width="210" align="left" class="fullWidth align-center" id="johnson" style="font-family: Arial, Helvetica, sans-serif; color: #000000; font-size:11px;">Johnson Line color sit amet, consectetur dipiscing elit. <a style="color:blue;" href="#">Call to Action &gt;</a></td>
+                    <td class="mobileHide">&nbsp;</td>
+                    <td width="210" align="right" class="fullWidth align-center" style="font-family: Arial, Helvetica, sans-serif; color: #000000; font-size:11px;">Browser Link dolor sit amet, consectetur dipiscing elit. <a style="color:blue;" href="#">View in browser</a></td>
                   </tr>
                 </tbody>
               </table></td>
@@ -119,10 +100,10 @@ img[class=fullwidth] {
               <td>&nbsp;</td>
             </tr>
             <tr>
-              <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <td><table class="mobileContentWidth" style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
                   <tbody>
                     <tr>
-                      <td style="width:160px;" align="left" class="block mob-center" id="logo"><img src="images/logo-1x.jpg" alt=""></td>
+                      <td style="width:160px;" align="left" class="block mob-center" id="logo"><img src="http://placehold.it/140x60" alt=""></td>
                       <td class="block mob-center" align="left" style="font-family: Arial, Helvetica, sans-serif; font-size:15px; color: #000000;">Lorem ipsum Tagline</td>
                     </tr>
                   </tbody>
@@ -132,44 +113,31 @@ img[class=fullwidth] {
               <td style="mso-line-height-rule: exactly; line-height:10px; font-size:10px; height:10px;">&nbsp;</td>
             </tr>
             <tr>
-              <td id="banner"><table class="mobhide" id="banner-desktop" cellspacing="0" cellpadding="0" border="0">
+              <td>
+                <!-- Start header images -->
+                <table class="mobileContentWidth" style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
                   <tbody>
                     <tr>
-                      <td><img style="vertical-align:middle;" src="images/header-1x.jpg" alt="Banner"></td>
+                      <td>
+                        <img class="mobileHide" src="http://placehold.it/650x250" alt="" style="border:none;">
+                        <!--[if !mso]><!-- -->
+                        <img class="mobileShow" src="http://placehold.it/350x200" width="0" height="0" alt="" style="border:none; display:none; mso-hide:all;">
+                        <!--<![endif]-->
+                      </td>
                     </tr>
                   </tbody>
                 </table>
-                <table id="banner-mobile" cellspacing="0" cellpadding="0" border="0" class="mobileonly" style="font-size:0; line-height:0; height:0; max-height:0; width:0; text-indent:-9999px; display:none; overflow:hidden; mso-hide:all;">
-                  <tbody class="mobileonly" style="font-size:0; line-height:0; height:0; max-height:0; width:0; text-indent:-9999px; display:none; overflow:hidden; mso-hide:all;">
-                    <tr class="mobileonly" style="font-size:0; line-height:0; height:0; max-height:0; width:0; text-indent:-9999px; display:none; overflow:hidden; mso-hide:all;">
-                      <td class="mobileonly" style="font-size:0; line-height:0; height:0; max-height:0; width:0; text-indent:-9999px; display:none; overflow:hidden; mso-hide:all;"><img class="mobileonly" style="font-size:0; line-height:0; height:0; max-height:0; width:0; text-indent:-9999px; display:none; overflow:hidden; mso-hide:all;" src="images/header-mob-2x.jpg" alt="Banner"></td>
-                    </tr>
-                  </tbody>
-                </table></td>
-            </tr>
-            <tr>
-              <td class="padding" align="center" bgcolor="#d0d0d0"><table width="600" border="0" cellspacing="0" cellpadding="0">
-                  <tbody>
-                    <tr>
-                      <td align="left">&nbsp;</td>
-                    </tr>
-                    <tr>
-                      <td align="left" style="font-family: Arial, Helvetica, sans-serif; font-size:20px; color: #000000;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation – <a style="color:blue;" href="#">Call to Action &gt;</a></td>
-                    </tr>
-                    <tr>
-                      <td align="left">&nbsp;</td>
-                    </tr>
-                  </tbody>
-                </table></td>
+                <!-- End header images -->
+              </td>
             </tr>
             <tr>
               <td>&nbsp;</td>
             </tr>
             <tr>
-              <td class="padding" align="center"><table width="600" border="0" cellspacing="0" cellpadding="0">
+              <td align="center"><table class="mobileContentWidth" style="width: 600px;" border="0" cellspacing="0" cellpadding="0">
                 <tbody>
                   <tr>
-                    <td style="width: 300px;" class="block" align="left" valign="top"><table width="290" border="0" cellpadding="0" cellspacing="0">
+                    <td style="width: 300px;" class="fullWidth align-left" align="left" valign="top"><table class="fullWidth" style="width: 290px;" border="0" cellpadding="0" cellspacing="0">
                       <tbody>
                         <tr>
                           <td align="left" style="font-family: Arial, Helvetica, sans-serif; font-size:16px; color: #666666;"><strong style="color:#000000;">Dear [Insert personalisation]</strong><br />
@@ -177,7 +145,7 @@ img[class=fullwidth] {
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora. <br />
                             Incidunt ut labore et dolore magnam aliquam quaerat voluptatem:<br />
                             <br />
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
                               <tbody>
                                 <tr>
                                   <td align="left" style="font-family: Arial, Helvetica, sans-serif; font-size:16px; color: #666666; width:15px;">&bull;</td>
@@ -211,23 +179,23 @@ img[class=fullwidth] {
                         </tr>
                       </tbody>
                     </table></td>
-                    <td style="width:300px;" class="block" align="right" valign="top"><table width="290" border="0" cellpadding="0" cellspacing="0">
+                    <td style="width:300px;" class="fullWidth align-left" align="right" valign="top"><table class="fullWidth" style="width: 290px; background-color: #666666" border="0" cellpadding="0" cellspacing="0">
                       <tbody>
                         <tr>
-                          <td bgcolor="#666666" style="font-family: Arial, Helvetica, sans-serif; font-size:18px; color: #000000;">&nbsp;</td>
+                          <td style="font-family: Arial, Helvetica, sans-serif; font-size:18px; color: #000000;">&nbsp;</td>
                         </tr>
                         <tr>
-                          <td align="center" bgcolor="#666666" style="font-family: Arial, Helvetica, sans-serif; font-size:18px; color: #000000;"><table width="260" border="0" cellspacing="0" cellpadding="0">
+                          <td align="center" style="font-family: Arial, Helvetica, sans-serif; font-size:18px; color: #000000;"><table style="width: 260px;" border="0" cellspacing="0" cellpadding="0">
                             <tbody>
                               <tr>
-                                <td class="padding"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                <td><table style="width: 100%;" border="0" cellpadding="0" cellspacing="0">
                                   <tbody>
                                     <tr>
-                                      <td style="width:105px;" align="left"><img src="images/side-image-1x.jpg" alt="" /></td>
+                                      <td style="width:105px;" align="left" valign="top"><img src="http://placehold.it/88x88" alt="" /></td>
                                       <td align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size:14px; color: #FFFFFF;"><strong>Lorem ipsum dolor <br />
                                         sit amet, consectetur adipisicing elit, sed.</strong><br />
                                         <br />
-                                        Dolore magna aliqua. Ut enim ad minim veniam quisnos. </td>
+                                        Dolore magna aliqua. Ut enim ad minim veniam quisnos.</td>
                                     </tr>
                                   </tbody>
                                 </table></td>
@@ -236,28 +204,23 @@ img[class=fullwidth] {
                           </table></td>
                         </tr>
                         <tr>
-                          <td bgcolor="#666666" style="font-family: Arial, Helvetica, sans-serif; font-size:18px; color: #000000;">&nbsp;</td>
-                        </tr>
-                        <tr>
-                          <td align="center" bgcolor="#666666" style="font-family: Arial, Helvetica, sans-serif; font-size:18px; color: #000000;"><a href="#"><img style="border:0;" src="images/cta.png" alt="" /></a></td>
-                        </tr>
-                        <tr>
-                          <td bgcolor="#666666" style="font-family: Arial, Helvetica, sans-serif; font-size:18px; color: #000000;">&nbsp;</td>
+                          <td style="font-family: Arial, Helvetica, sans-serif; font-size:18px; color: #000000;">&nbsp;</td>
                         </tr>
                       </tbody>
                     </table></td>
                   </tr>
                 </tbody>
               </table>
-                <table width="600" border="0" cellspacing="0" cellpadding="0">
+                <table class="fullWidth" style="width: 600px;" border="0" cellspacing="0" cellpadding="0">
                   <tbody>
                     <tr>
-                      <td>&nbsp;</td></tr>
+                      <td>&nbsp;</td>
+                    </tr>
                   </tbody>
                 </table>
             </td></tr>
             <tr>
-              <td class="padding"><table width="650" border="0" cellpadding="0" cellspacing="0">
+              <td><table class="mobileContentWidth" style="width: 650px;" border="0" cellpadding="0" cellspacing="0">
                   <tbody>
                     <tr>
                       <td style="border-bottom:1px solid #CCCCCC;">&nbsp;</td>
