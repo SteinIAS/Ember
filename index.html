@@ -7,10 +7,10 @@
    <title>Ember Template</title>
 
    <style type="text/css">
-      div, p, a, li, td {
+      div, p, a, li, td, th {
          -webkit-text-size-adjust:none;
       }
-      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {
+      .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass th, .ExternalClass div {
          mso-line-height-rule: exactly;
          line-height: 100%;
       }
@@ -21,9 +21,13 @@
          width:100%;
       }
       /* Resets all body margins and padding to 0 for good measure */
-      table, td {
+      table, td, th {
       mso-table-lspace: 0pt;
       mso-table-rspace: 0pt;
+      }
+      /* Remove 1px padding from yahoomail */
+      .undoreset th {
+        padding: 0 !important;
       }
       /* Mobile Styles */
       @media only screen and (max-width: 650px) {
@@ -38,11 +42,8 @@
          *[class="mobileShow"] {
             display: block !important;
          }
-         td[id="johnson"] {
-            padding-bottom: 10px !important;
-         }
          img {
-            width: auto !important;
+            height: auto !important;
             max-width: 100% !important;
          }
          table[class="fullWidth"] {
@@ -53,13 +54,13 @@
             width: 90% !important;
             margin: 0 auto !important;
          }
-         td[class="fullWidth align-left"] {
+         *[class="fullWidth align-left"] {
             display: block !important;
             width: 100% !important;
             height: auto !important;
             text-align: left !important;
          }
-         td[class="fullWidth align-center"] {
+         *[class="fullWidth align-center"] {
             display: block !important;
             width: 100% !important;
             height: auto !important;
@@ -94,15 +95,14 @@
                 <table class="mobileContentWidth" style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
                   <tbody>
                     <tr>
-                      <td align="left" valign="top" class="fullWidth align-center" id="johnson" style="font-family: Arial, Helvetica, sans-serif; color: #000000; font-size:11px; line-height: 14px;">
+                      <th align="left" valign="top" class="fullWidth align-center" style="font-family: Arial, Helvetica, sans-serif; color: #000000; font-size:11px; line-height: 14px; padding-bottom: 5px; padding-top: 5px; vertical-align: top; font-weight: normal;">
                         Insert Johnson Line here
                         <br />
                         <a href="#" style="outline: none; border: none; color:blue;">Call to Action</a>
-                      </td>
-                      <td align="right" class="fullWidth align-center" style="font-family: Arial, Helvetica, sans-serif; color: #000000; font-size:11px; line-height: 14px;">
-                      Having trouble viewing this email ?
-                      <br />
-                      <a href="#" style="outline: none; border: none; color:blue;">View in browser</a></td>
+                      </th>
+                      <th align="right" class="fullWidth align-center" style="font-family: Arial, Helvetica, sans-serif; color: #000000; font-size:11px; line-height: 14px; padding-bottom: 5px; padding-top: 5px; vertical-align: top; font-weight: normal;">
+                        Having trouble viewing this email ?<br />
+                      <a href="#" style="outline: none; border: none; color:blue;">View in browser</a></th>
                     </tr>
                   </tbody>
                 </table>
@@ -116,12 +116,12 @@
                 <table class="mobileContentWidth" style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
                   <tbody>
                     <tr>
-                      <td align="left" class="fullWidth align-center" style="padding-top: 5px; padding-bottom: 5px;">
-                        <img src="http://placehold.it/140x60" alt="" style="border: none; outline: none;">
-                      </td>
-                      <td class="fullWidth align-center" align="right" style="font-family: Arial, Helvetica, sans-serif; font-size:15px; line-height: 18px; color: #000000; padding-top: 5px; padding-bottom: 5px;">
-                        Lorem ipsum Tagline
-                      </td>
+                      <th align="left" style="padding-top: 5px; padding-bottom: 5px; vertical-align: top; font-weight: normal;">
+                        <img src="http://placehold.it/140x60" width="140" alt="" style="border: none; outline: none;">
+                      </th>
+                      <th align="right" style="padding-top: 5px; padding-bottom: 5px; vertical-align: top; font-weight: normal;">
+                        <img src="http://placehold.it/140x60" width="140" alt="" style="border: none; outline: none;">
+                      </th>
                     </tr>
                   </tbody>
                 </table>
@@ -136,7 +136,7 @@
                   <tbody>
                     <tr>
                       <td align="center" valign="top">
-                        <img class="mobileHide" src="http://placehold.it/650x250" alt="" style="border:none; outline: none;">
+                        <img class="mobileHide" src="http://placehold.it/650x250" width="650" alt="" style="border:none; outline: none;">
                         <!--[if !mso]><!-- -->
                         <img class="mobileShow" src="http://placehold.it/350x200" alt="" style="border:none; outline: none; display:none; mso-hide:all; width: 0; height: 0; line-height: 0;">
                         <!--<![endif]-->
@@ -153,75 +153,102 @@
                 <tbody>
                   <tr>
                     <!-- Left Cell Starts -->
-                    <td style="width: 300px; padding-bottom: 20px;" class="fullWidth align-left" align="left" valign="top">
+                    <th style="width: 300px; padding-bottom: 20px; padding-top: 10px; vertical-align: top; font-weight: normal;" class="fullWidth align-left" align="left" valign="top">
                       <table class="mobileContentWidth" style="width: 290px;" border="0" cellpadding="0" cellspacing="0">
                         <tbody>
                           <tr>
-                            <td align="left" style="font-family: Arial, Helvetica, sans-serif; font-size:16px; line-height: 19px; color: #666666;">
+                            <td align="left" style="font-family: Arial, Helvetica, sans-serif; font-size:16px; line-height: 19px; color: #666666; padding-bottom: 15px;">
                               <strong style="color:#000000;">Dear [Insert personalisation]</strong>
-                              <br />
-                              <br />
+                            </td>
+                          </tr>
+                          <tr>
+                            <td align="left" style="font-family: Arial, Helvetica, sans-serif; font-size:16px; line-height: 19px; color: #666666; padding-bottom: 15px;">
                               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.
                               <br />
                               Incidunt ut labore et dolore magnam aliquam quaerat voluptatem:
-                              <br />
-                              <br />
-                              <table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
-                                <tbody>
-                                  <tr>
-                                    <td align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size:16px; line-height: 19px; color: #666666; width:15px;">&bull;</td>
-                                    <td align="left" style="font-family: Arial, Helvetica, sans-serif; font-size:16px; line-height: 19px; color: #666666;">Labore et dolore magnam</td>
-                                  </tr>
-
-                                  <!-- Middle padding TR Starts -->
-                                  <tr>
-                                    <td align="left" valign="top"  style="font-family: Arial, Helvetica, sans-serif; font-size:16px; line-height: 19px; color: #666666; padding-top: 10px; padding-bottom: 10px;">&bull;</td>
-                                    <td align="left" style="font-family: Arial, Helvetica, sans-serif; font-size:16px; line-height: 19px; color: #666666; padding-top: 10px; padding-bottom: 10px;">Labore et dolore magnam</td>
-                                  </tr>
-                                  <!-- Middle padding TR Ends -->
-
-                                  <tr>
-                                    <td align="left" valign="top"  style="font-family: Arial, Helvetica, sans-serif; font-size:16px; line-height: 19px; color: #666666;">&bull;</td>
-                                    <td align="left" style="font-family: Arial, Helvetica, sans-serif; font-size:16px; line-height: 19px; color: #666666;">Labore et dolore magnam</td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                              <br />
-                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad ipsum quia dolor sit
-                              <br />
-                              <br />
-                              <a href="#" style="outline: none; border: none; color:blue;">Call to Action</a>
-                              <br />
                             </td>
-                          </tr>
+                            </tr>
+
+                            <tr>
+                            <!-- Bullet points Starts -->
+                              <td align="left" style="font-family: Arial, Helvetica, sans-serif; font-size:16px; line-height: 19px; color: #666666; padding-bottom: 10px;">
+                                <table style="width: 100%;" border="0" cellspacing="0" cellpadding="0">
+                                  <tbody>
+                                    <tr>
+                                      <td width="15" align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size:16px; line-height: 19px; color: #666666; padding-bottom: 10px;">&bull;</td>
+                                      <td align="left" style="font-family: Arial, Helvetica, sans-serif; font-size:16px; line-height: 19px; color: #666666; padding-bottom: 10px;">Labore et dolore magnam</td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="15" align="left" valign="top"  style="font-family: Arial, Helvetica, sans-serif; font-size:16px; line-height: 19px; color: #666666; padding-bottom: 10px;">&bull;</td>
+                                      <td align="left" style="font-family: Arial, Helvetica, sans-serif; font-size:16px; line-height: 19px; color: #666666; padding-bottom: 10px;">Labore et dolore magnam</td>
+                                    </tr>
+
+                                    <tr>
+                                      <td width="15" align="left" valign="top"  style="font-family: Arial, Helvetica, sans-serif; font-size:16px; line-height: 19px; color: #666666; padding-bottom: 10px;">&bull;</td>
+                                      <td align="left" style="font-family: Arial, Helvetica, sans-serif; font-size:16px; line-height: 19px; color: #666666; padding-bottom: 10px;">Labore et dolore magnam</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            <!-- Bullet points Ends -->
+                            </tr>
+
+                            <tr>
+                              <td align="left" style="font-family: Arial, Helvetica, sans-serif; font-size:16px; line-height: 19px; color: #666666; padding-bottom: 15px;">
+                              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad ipsum quia dolor sit
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" style="font-family: Arial, Helvetica, sans-serif; font-size:16px; line-height: 19px; color: #666666;">
+                                <a href="#" style="outline: none; border: none; color:#666666;">Call to Action</a>
+                              </td>
+                            </tr>
                         </tbody>
                       </table>
-                    </td>
+                    </th>
                     <!-- Left Cell Ends -->
 
                     <!-- Right Cell Starts -->
-                    <td style="width:300px;" class="fullWidth align-left" align="right" valign="top">
+                    <th style="width:300px; vertical-align: top; font-weight: normal; padding-bottom: 20px; padding-top: 10px;" class="fullWidth align-left" align="right" valign="top">
                       <table class="fullWidth" style="width: 290px; background-color: #666666" border="0" cellpadding="0" cellspacing="0">
                         <tbody>
                           <tr>
+                          <!-- Sidebar Title Start -->
+                            <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size:18px; line-height: 21px; padding-top: 20px; padding-bottom: 20px; background-color: #CCCCCC;">
+                              <table style="width: 250px;" border="0" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                  <tr>
+                                    <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size:20px; line-height: 23px; color: #ffffff;">
+                                    Lorem Title
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          <!-- Sidebar Title End -->
+                          </tr>
+                          <tr>
+                          <!-- Thumbnail & copy Starts -->
                             <td align="center" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size:18px; line-height: 21px; color: #000000; padding-top: 20px; padding-bottom: 20px;">
-                              <table style="width: 260px;" border="0" cellspacing="0" cellpadding="0">
+                              <table style="width: 250px;" border="0" cellspacing="0" cellpadding="0">
                                 <tbody>
                                   <tr>
                                     <td align="center" valign="top">
                                       <table style="width: 100%;" border="0" cellpadding="0" cellspacing="0">
                                         <tbody>
                                           <tr>
-                                            <td style="width:105px;" align="left" valign="top">
-                                              <img src="http://placehold.it/88x88" alt="" style="border: none; outline: none;" />
+                                            <td align="center" valign="top" style="padding-top: 10px; padding-bottom: 20px;">
+                                              <img src="http://placehold.it/180x220" width="180" alt="" style="border: none; outline: none;" />
                                             </td>
+                                          </tr>
+                                          <tr>
                                             <td align="left" valign="top" style="font-family: Arial, Helvetica, sans-serif; font-size:14px; line-height: 17px; color: #FFFFFF;">
-                                              <strong>Lorem ipsum dolor
-                                              <br />
-                                              sit amet, consectetur adipisicing elit, sed.</strong>
-                                              <br />
-                                              <br />
-                                              Dolore magna aliqua. Ut enim ad minim veniam quisnos.</td>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                            consequat.
+                                            </td>
                                           </tr>
                                         </tbody>
                                       </table>
@@ -230,10 +257,18 @@
                                 </tbody>
                               </table>
                             </td>
+                          <!-- Thumbnail & copy Ends -->
+                          </tr>
+                          <tr>
+                          <!-- CTA Starts -->
+                            <td style="font-family: Arial, Helvetica, sans-serif; font-size:16px; line-height: 19px; padding-top: 10px; padding-bottom: 10px; background-color: #ff0044; color: #ffffff;" align="center" valign="top">
+                              <a href="#" target="_blank" style="text-decoration: none; color: #ffffff;">lorem button</a>
+                            </td>
+                          <!-- CTA Ends -->
                           </tr>
                         </tbody>
                       </table>
-                    </td>
+                    </th>
                     <!-- Right Cell Ends -->
                   </tr>
                 </tbody>
