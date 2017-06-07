@@ -15,7 +15,7 @@ Always add a `valign` attrbute on all `<td>` tags, for best pratice and consiste
 
 ---
 
-When we want two elements next to each other to stack on mobile, we use `<th></th>` tags instead of `<td></td>` to workk acorss all devices, this is to fix the latest IOS versions. 
+When we want two elements next to each other to stack on mobile, we use `<th></th>` tags instead of `<td></td>` to work acorss all devices, this is to fix the latest IOS versions. 
 
 ```html
 <tr>
@@ -23,3 +23,7 @@ When we want two elements next to each other to stack on mobile, we use `<th></t
 	<th align="right" valign="top" style="width: 300px; padding-bottom: 10px; padding-top: 10px; vertical-align: top; font-weight: normal;" class="fullWidth align-center"></th>
 </tr>
 ```
+
+---
+
+Don't forget to change the `<title></title>` attribute value on each email to fit the campaign/client intended instead of leaving it to the default **Ember Template**
