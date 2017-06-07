@@ -15,7 +15,7 @@ Always add a `valign` attrbute on all `<td>` tags, for best practice and consist
 
 ---
 
-When we want two elements next to each other to stack on mobile, we use `<th></th>` tags instead of `<td></td>` to work acorss all devices, this is to fix the latest IOS versions. 
+When we want two elements next to each other on desktop but want them to stack on mobile, we use `<th></th>` tags instead of `<td></td>` to work acorss all devices, this is to fix the latest IOS versions. 
 
 ```html
 <tr>
