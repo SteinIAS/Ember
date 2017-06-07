@@ -26,7 +26,7 @@ When we want two elements next to each other on desktop but want them to stack o
 
 ---
 
-Don't forget to change the `<title></title>` attribute value on each email to fit the campaign/client intended instead of leaving it to the default **Ember Template**
+Don't forget to change the `<title></title>` tags value on each email to fit the campaign/client intended instead of leaving it to the default **Ember Template**
 
 ---
 
