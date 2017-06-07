@@ -6,7 +6,10 @@ A best practise email template to be used as a starter kit for new emails.
 
 ```html
 <tr>
-	<td align="left" valign="top" style="padding-top: 10px; padding-bottom: 10px;">Example Text</td>
+	<td align="left" valign="top" style="padding-top: 10px; padding-bottom: 10px;">Example Text 1</td>
+</tr>
+<tr>
+	<td align="left" valign="top" style="padding-top: 10px; padding-bottom: 10px;">Example Text 2</td>
 </tr>
 ```
 ---
