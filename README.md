@@ -11,7 +11,7 @@ A best practise email template to be used as a starter kit for new emails.
 ```
 ---
 
-Always add a `valign` attrbute on all `<td>` tags, for best pratice and consistency.
+Always add a `valign` attrbute on all `<td>` tags, for best practice and consistency.
 
 ---
 
