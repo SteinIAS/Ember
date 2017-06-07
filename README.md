@@ -1,3 +1,5 @@
+![Ember](https://s10.postimg.org/kpbcmyvkp/Ember_Template.png)
+
 # Ember
 A best practise email template to be used as a starter kit for new emails.
 
