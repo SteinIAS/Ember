@@ -9,6 +9,6 @@ A best practise email template to be used as a starter kit for new emails.
 	<td align="left" valign="top" style="padding-top: 10px; padding-bottom: 10px;">Example Text</td>
 </tr>
 ```
-======
+---
 
-> We want to add a `valign` attrbute on all `<td>` tags.
+We want to add a `valign` attrbute on all `<td>` tags, for best pratice and consistency.
