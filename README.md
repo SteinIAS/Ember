@@ -50,3 +50,6 @@ When using anchor links across your email, you need to include the styling as sh
 ```html 
 <a href="http://www.google.co.uk" style="outline: none; border: none; text-decoration: none; color: #000000;" target="_blank">Google</a>
 ```
+
+### HAPPY CODING!
+ 
