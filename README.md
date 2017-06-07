@@ -37,3 +37,11 @@ All `<img>` tags must look like the below example, missing these attributes out 
 ```
 
 Images are always 2x there size also, so if you have an image that is both 200px width and height. You would set the width to be `width="100" height="100"` so that it's retina friendly/mobile proof.
+
+---
+
+When using anchor links across your email, you need to include the styling as shown below so that it doesn't display unusual borders or outlines across some clients. 
+
+```html 
+<a href="http://www.google.co.uk" style="outline: none; border: none; target="_blank">Google</a>
+```
