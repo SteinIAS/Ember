@@ -41,7 +41,7 @@ All `<img>` tags must look like the below example, missing these attributes out 
 <img src="http://placehold.it/200x200" width="100" height="100" alt="placeholder" style="border: none; outline: none;" />
 ```
 
-Images are always 2x there size also, so if you have an image that is both 200px width and height. You would set the width to be `width="100" height="100"` so that it's retina friendly/mobile proof.
+Images are always 2x there size also, so if you have an image that is both 200px width and height. You would set the width and height to be `width="100" height="100"` so that it's retina friendly/mobile proof.
 
 ---
 
