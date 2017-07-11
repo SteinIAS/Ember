@@ -20,7 +20,7 @@ Always add a `valign` attrbute on all `<td>` tags, for best practice and consist
 
 ---
 
-When we want two elements next to each other on desktop but want them to stack on mobile, we use `<th></th>` tags instead of `<td></td>` to work acorss all devices, this is to fix the latest IOS versions. 
+When we want two elements next to each other on desktop but want them to stack on mobile, we use `<th></th>` tags instead of `<td></td>` to work acorss all devices, this is to fix the latest IOS versions.
 
 ```html
 <tr>
@@ -35,7 +35,7 @@ Don't forget to change the `<title></title>` tags value on each email to fit the
 
 ---
 
-All `<img>` tags must look like the below example, missing these attributes out can cause issues across clients. i.e. Styling, alt tags etc. 
+All `<img>` tags must look like the below example, missing these attributes out can cause issues across clients. i.e. Styling, alt tags etc.
 
 ```html
 <img src="http://placehold.it/200x200" width="100" height="100" alt="placeholder" style="border: none; outline: none;" />
@@ -45,11 +45,11 @@ Images are always 2x there size also, so if you have an image that is both 200px
 
 ---
 
-When using anchor links across your email, you need to include the styling as shown below so that it doesn't display unusual borders or outlines across some clients. 
+When using anchor links across your email, you need to include the styling as shown below so that it doesn't display unusual borders or outlines across some clients.
 
-```html 
+```html
 <a href="http://www.google.co.uk" style="outline: none; border: none; text-decoration: none; color: #000000;" target="_blank">Google</a>
 ```
 
 ### HAPPY CODING!
- 
+
