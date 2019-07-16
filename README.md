@@ -1,9 +1,14 @@
-![Ember](https://s4.postimg.org/ec3ncyzb1/Ember-_Template.jpg)
-
+---
 # Ember
-A best practise email template to be used as a starter kit for new emails.
+- Type: **Template**
+- Staging: 
+- Live: 
+___
+
+A best practice email template to be used as a starter kit for new emails.
 
 ## Best Practice Techniques
+
 **Don't** use `<br />` tags for spacing, create single cell rows with a `<td></td>` inside instead so you can control the spacing through border, padding-top or bottom etc. Also this allows individual paragraphs to be styled differently (eg: center align, bigger fonts etc) by non-devs
 
 ```html
