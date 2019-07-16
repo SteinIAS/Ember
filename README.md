@@ -1,9 +1,9 @@
 ---
 # Ember
-- Type: **Template**
-- Staging: 
-- Live: 
-___
+Type: **Template**
+Staging: test
+Live: test
+---
 
 A best practice email template to be used as a starter kit for new emails.
 
