@@ -1,0 +1,213 @@
+<mjml>
+   <mj-head>
+      <mj-title>
+         Ember template built using MJML
+      </mj-title>
+      <!-- breakpoint min-width:650 -->
+      <mj-breakpoint width="650px" />
+      <mj-attributes>
+         <!-- Specificity order: Default MJML styles < default mj-attributes < classes < inline attribues  -->
+         <mj-class name="small-font" font-size="12px" />
+         <mj-all font-family="Arial, Helvetica, Sans-serif" font-size="16px" line-height="1.2" color="#666666" padding="0" />
+         <mj-section background-color="#ffffff" />
+         <mj-navbar-link text-transform="none" text-decoration="underline" color="blue" />
+         <mj-social-element padding="0 10px 0 0" />
+      </mj-attributes>
+
+      <mj-style>
+         /* Custom styles overwriting all styles */
+         @media (min-width: 650px) {
+
+            .left-align div,
+            .left-align {
+               text-align: left !important;
+            }
+
+            .right-align div,
+            .right-align {
+               text-align: right !important;
+            }
+         }
+
+         /* Since outlook can't read media queries, the above styles have to be written again with outlook specific class */
+         /* Outlook specific styles "-outlook" is added automatcially to classnames on mj-section when it is rendered to html */
+         .desktop-align-outlook .left-align div,
+         .desktop-align-outlook .left-align {
+            text-align: left !important;
+         }
+
+         .desktop-align-outlook .right-align div,
+         .desktop-align-outlook .right-align {
+            text-align: right !important;
+         }
+      </mj-style>
+   </mj-head>
+
+   <mj-body background-color="#e7e7e7" width="650px">
+      <mj-section css-class="desktop-align" padding="15px 25px">
+         <mj-column padding="5px 0">
+            <mj-text css-class="left-align" mj-class="small-font" align="center">
+               Insert Johnson Line here
+            </mj-text>
+         </mj-column>
+         <mj-column padding="5px 0">
+            <mj-text css-class="right-align" mj-class="small-font" align="center">
+               View in browser
+            </mj-text>
+         </mj-column>
+      </mj-section>
+
+      <mj-section padding="15px 25px" border-top="1px solid #cccccc;">
+         <mj-group>
+            <mj-column>
+               <mj-image align="left" src="http://via.placeholder.com/240x120/438db9/ffffff" alt="" width="120px" />
+            </mj-column>
+            <mj-column>
+               <mj-image align="right" src="http://via.placeholder.com/240x120/dd3977/ffffff" alt="" width="120px" />
+            </mj-column>
+         </mj-group>
+      </mj-section>
+
+      <mj-section>
+         <mj-column>
+            <mj-image src="http://via.placeholder.com/1300x500/438db9/ffffff" alt="" />
+         </mj-column>
+      </mj-section>
+
+      <mj-section background-color="#464646" padding="20px 25px">
+         <mj-column>
+            <mj-text align="center" color="#ffffff" text-transform="uppercase">
+               Stripline Element Example
+            </mj-text>
+         </mj-column>
+      </mj-section>
+
+      <mj-section padding="25px 25px 10px">
+         <mj-column>
+            <mj-text padding-bottom="20px" font-weight="bold">
+               Dear [Insert Personalisation]
+            </mj-text>
+            <mj-text padding-bottom="20px">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.
+            </mj-text>
+            <mj-text padding-bottom="20px">
+               Incidunt ut labore et dolore magnam aliquam quaerat voluptatem:
+            </mj-text>
+            <mj-text padding-bottom="20px">
+               <ul style="margin:0; padding-left: 20px;">
+                  <li style="padding-bottom: 7px;">Labore et dolore magnam</li>
+                  <li style="padding-bottom: 7px;">Labore et dolore magnam</li>
+                  <li style="padding-bottom: 0px;">Labore et dolore magnam</li>
+               </ul>
+            </mj-text>
+            <mj-text padding-bottom="20px">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad ipsum quia dolor sit
+            </mj-text>
+            <mj-text padding-bottom="20px">
+               <a href="" target="_blank" style="color:#666666;">Call to Action</a>
+            </mj-text>
+            <mj-button align="left" background-color="#dd3977" color="#ffffff" href="/" border-radius="7px" width="150px" inner-padding="12px" padding-bottom="20px">
+               Call to Action
+            </mj-button>
+         </mj-column>
+
+         <mj-column background-color="#41677d">
+            <mj-text align="center" container-background-color="#464646" color="#ffffff" padding="20px" font-size="18px">
+               Lorem Title
+            </mj-text>
+            <mj-image src="http://via.placeholder.com/360x440/dd3977/ffffff" alt="" width="180px" padding="30px 20px 20px" />
+            <mj-text color="#ffffff" padding="0 20px 20px" font-size="14px">
+               <div style="width:230px; margin: 0 auto;">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </mj-text>
+            <mj-button background-color="#438db9" color="#ffffff" href="/" border-radius="0" width="100%" text-transform="uppercase">
+               Lorem Button
+            </mj-button>
+            <mj-spacer height="20px" container-background-color="#ffffff" />
+         </mj-column>
+      </mj-section>
+
+      <mj-section background-color="#438db9" padding="20px 25px">
+         <mj-column>
+            <mj-text align="center" color="#ffffff" font-size="18px">
+               List Layout Grid Example
+            </mj-text>
+         </mj-column>
+      </mj-section>
+      <mj-section background-color="#41677d" padding="20px 25px">
+         <mj-group width="350px">
+            <mj-column>
+               <mj-image src="http://via.placeholder.com/140x140/438db9/ffffff" alt="" width="60px" />
+            </mj-column>
+            <mj-column>
+               <mj-image src="http://via.placeholder.com/140x140/dd3977/ffffff" alt="" width="60px" />
+            </mj-column>
+            <mj-column>
+               <mj-image src="http://via.placeholder.com/140x140/438db9/ffffff" alt="" width="60px" />
+            </mj-column>
+            <mj-column>
+               <mj-image src="http://via.placeholder.com/140x140/dd3977/ffffff" alt="" width="60px" />
+            </mj-column>
+         </mj-group>
+      </mj-section>
+
+      <mj-section background-color="#464646" padding="25px 25px 10px">
+         <mj-column width="320px">
+            <mj-text padding-bottom="30px" padding-top="10px" color="#ffffff">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </mj-text>
+         </mj-column>
+         <mj-column width="30px">
+            <!-- Column space -->
+         </mj-column>
+         <mj-column width="140px">
+            <mj-image src="http://via.placeholder.com/280x280/dd3977/ffffff" alt="" width="140px" padding-bottom="20px" />
+         </mj-column>
+      </mj-section>
+
+      <mj-section padding="25px">
+         <mj-column>
+            <mj-text padding-bottom="15px" font-size="14px">
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </mj-text>
+            <mj-text font-size="14px">
+               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </mj-text>
+         </mj-column>
+      </mj-section>
+
+      <mj-section css-class="desktop-align" padding="0 25px">
+         <mj-column width="250px" padding-bottom="20px">
+            <mj-social icon-size="30px" css-class="left-align">
+               <mj-social-element name="facebook-noshare" href="https://facebook.com"></mj-social-element>
+               <mj-social-element name="twitter-noshare" href="https://twitter.com"></mj-social-element>
+               <mj-social-element name="pinterest-noshare" href="https://pinterest.com/"></mj-social-element>
+               <mj-social-element name="linkedin-noshare" href="https://linkedin.com/"></mj-social-element>
+               <mj-social-element name="youtube-noshare" href="https://youtube.com/"></mj-social-element>
+            </mj-social>
+         </mj-column>
+         <mj-column width="350px" padding-bottom="20px" padding-top="7px">
+            <mj-navbar css-class="right-align">
+               <mj-navbar-link href="/" target="_blank" padding-right="20px" font-size="14px">
+                  Privacy Policy
+               </mj-navbar-link>
+               <mj-navbar-link href="/" target="_blank" padding-right="20px" font-size="14px">
+                  Terms & Conditions
+               </mj-navbar-link>
+               <mj-navbar-link href="/" target="_blank" font-size="14px">
+                  Unsubscribe
+               </mj-navbar-link>
+            </mj-navbar>
+         </mj-column>
+      </mj-section>
+
+      <mj-section padding="0 25px 25px">
+         <mj-column>
+            <mj-text align="center" font-size="12px">
+               Copyright &copy; 2019 {INSERT CLIENT}. All rights reserved.
+            </mj-text>
+         </mj-column>
+      </mj-section>
+
+   </mj-body>
+</mjml>
